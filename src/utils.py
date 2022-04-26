@@ -107,10 +107,10 @@ def load_trained_model() -> None:
     """
     print("Loading trained model")
     return load_model(
-        "/cs/scratch/agj6/saved_models/dataset-{}_mammogramtype-{}_model-{}_lr-{}_b-{}_e1-{}_e2-{}_roi-{}_{}_saved-model.h5".format(
+        "../saved_models/dataset-{}_mammogramtype-{}_model-{}_lr-{}_b-{}_e1-{}_e2-{}_roi-{}_{}_saved-model.h5".format(
             config.dataset,
             config.mammogram_type,
-            config.model,
+            config.model[0:],
             config.learning_rate,
             config.batch_size,
             config.max_epoch_frozen,
