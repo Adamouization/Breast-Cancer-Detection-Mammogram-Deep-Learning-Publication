@@ -23,9 +23,9 @@ def main() -> None:
     
     :return: None
     """
-    csv_root = '../data/CBIS-DDSM/ori_csv'      # original csv folder
-    img_root = '/cs/tmp/datasets/CBIS-DDSM'     # dataset folder
-    csv_output_path = '../data/CBIS-DDSM-mask'       # csv output folder
+    csv_root = '/data/CBIS-DDSM/manifest-ZkhPvrLo5216730872708713142'               # original csv folder (change as needed)
+    img_root = '/data/CBIS-DDSM/manifest-ZkhPvrLo5216730872708713142/CBIS-DDSM'     # dataset folder (change as needed)
+    csv_output_path = '../data/CBIS-DDSM-mask'                                      # csv output folder (change as needed)
 
     folders = os.listdir(img_root)
 
