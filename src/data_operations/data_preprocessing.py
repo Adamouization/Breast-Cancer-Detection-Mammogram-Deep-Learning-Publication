@@ -174,7 +174,8 @@ def calculate_class_weights(y_train, label_encoder):
     if config.verbose_mode:
         print("Class weights: {}".format(str(class_weights)))
 
-    return class_weights
+    # return class_weights
+    return None
 
 
 def crop_roi_image(data_dir):
