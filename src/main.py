@@ -196,7 +196,7 @@ def parse_command_line_arguments() -> None:
                         )
     parser.add_argument("-lr", "--learning-rate",
                         type=float,
-                        default=1e-3,
+                        default=1e-4,
                         help="The learning rate for the non-ImageNet-pre-trained layers. Defaults to 1e-3."
                         )
     parser.add_argument("-b", "--batchsize",
