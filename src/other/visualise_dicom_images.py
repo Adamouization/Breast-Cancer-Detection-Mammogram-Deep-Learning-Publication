@@ -19,7 +19,8 @@ def main() -> None:
     """
     parse_command_line_arguments()
 
-    path = "/cs/tmp/datasets/CBIS-DDSM/Calc-Training_P_00005_RIGHT_CC/08-07-2016-DDSM-23157/1.000000-full mammogram images-38548/1-1.dcm"
+    # path = "/cs/tmp/datasets/CBIS-DDSM/Calc-Training_P_00005_RIGHT_CC/08-07-2016-DDSM-23157/1.000000-full mammogram images-38548/1-1.dcm"
+    path = "/data/CBIS-DDSM/manifest-ZkhPvrLo5216730872708713142/CBIS-DDSM/Calc-Test_P_00038_LEFT_CC_1/08-29-2017-DDSM-NA-94942/1.000000-ROI mask images-18515/1-1.dcm"
     dataset = pydicom.dcmread(path)
     plt.imshow(dataset.pixel_array, cmap=plt.cm.bone)
     plt.savefig("../output/image_original.png")
