@@ -33,7 +33,7 @@ def plot_roc_curve_binary(y_true: list, y_pred: list) -> None:
     plt.title('Receiver Operating Characteristic')
     plt.legend(loc='lower right')
     save_output_figure("ROC-binary")
-    plt.show()
+    # plt.show()
 
 
 def plot_roc_curve_multiclass(y_true: list, y_pred: list, label_encoder) -> None:
@@ -107,4 +107,4 @@ def plot_roc_curve_multiclass(y_true: list, y_pred: list, label_encoder) -> None
     plt.title('Receiver Operating Characteristic')
     plt.legend(loc='lower right')
     save_output_figure("ROC-multi")
-    plt.show()
+    # plt.show()

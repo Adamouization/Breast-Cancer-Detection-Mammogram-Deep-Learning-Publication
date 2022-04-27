@@ -42,7 +42,7 @@ def plot_confusion_matrix(cm: np.ndarray, fmt: str, label_encoder, is_normalised
         save_output_figure("CM-normalised")
     elif not is_normalised:
         save_output_figure("CM")
-    plt.show()
+    # plt.show()
 
 
 def plot_comparison_chart(df: pd.DataFrame) -> None:
@@ -68,7 +68,7 @@ def plot_comparison_chart(df: pd.DataFrame) -> None:
     plt.setp(ax.xaxis.get_majorticklabels(), rotation=60, ha='right', rotation_mode='anchor')
     plt.tight_layout()
     save_output_figure(title)
-    plt.show()
+    # plt.show()
 
 
 def plot_training_results(hist_input, plot_name: str, is_frozen_layers) -> None:
@@ -95,7 +95,7 @@ def plot_training_results(hist_input, plot_name: str, is_frozen_layers) -> None:
     # plt.ylim(0, 1.5)
     plt.legend(loc="upper right")
     plt.savefig("../output/dataset-{}_model-{}_{}-Loss.png".format(config.dataset, config.model, plot_name))
-    plt.show()
+    # plt.show()
 
     title = "Training Accuracy on {}".format(config.dataset)
     if not is_frozen_layers:
@@ -118,4 +118,4 @@ def plot_training_results(hist_input, plot_name: str, is_frozen_layers) -> None:
     plt.ylim(0, 1.1)
     plt.legend(loc="upper right")
     plt.savefig("../output/dataset-{}_model-{}_{}-Accuracy.png".format(config.dataset, config.model, plot_name))
-    plt.show()
+    # plt.show()
