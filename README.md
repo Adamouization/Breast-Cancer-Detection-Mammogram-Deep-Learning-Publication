@@ -1,6 +1,6 @@
 # Breast Cancer Detection in Mammograms Using Deep Learning Techniques
 
-Publication of the Dissertation for the MSc Artificial Intelligence at the University of St Andrews (2020-2021).
+Publication of A Divide and Conquor Approach to Maximise Deep Learning Mammography Classification Accuracies.
 
 ## Abstract
 
@@ -12,7 +12,7 @@ Convolution Neural Networks (CNNs) are used as part of a deep learning pipeline 
 
 Ultimately, a +5.28\% accuracy increase compared to a general baseline is achieved on the CBIS-DDSM dataset by transfer learning pre-trained ImagetNet weights to a MobileNetV2 architecture and pre-trained weights from a binary version of the mini-MIAS dataset to the fully connected layers of the model. Furthermore, using class weights to fight the problem of imbalanced datasets and splitting CBIS-DDSM samples between masses and calcifications also increases the overall accuracy. Other techniques tested such larger image sizes do not  yield increased accuracies without any image pre-processing such as gaussian filtering, histogram equalisation and input cropping.
 
-## Usage
+## Environment setup and usage
 
 Clone the repository:
 
