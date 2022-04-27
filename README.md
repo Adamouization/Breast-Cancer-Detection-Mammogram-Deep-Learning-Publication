@@ -12,27 +12,25 @@ Convolution Neural Networks (CNNs) are used as part of a deep learning pipeline 
 
 Ultimately, a +5.28\% accuracy increase compared to a general baseline is achieved on the CBIS-DDSM dataset by transfer learning pre-trained ImagetNet weights to a MobileNetV2 architecture and pre-trained weights from a binary version of the mini-MIAS dataset to the fully connected layers of the model. Furthermore, using class weights to fight the problem of imbalanced datasets and splitting CBIS-DDSM samples between masses and calcifications also increases the overall accuracy. Other techniques tested such larger image sizes do not  yield increased accuracies without any image pre-processing such as gaussian filtering, histogram equalisation and input cropping.
 
-## Usage on a GPU lab machine
+## Usage
 
 Clone the repository:
 
 ```
-cd ~/Projects
-git clone https://github.com/Adamouization/Breast-Cancer-Detection-Code
+git clone https://github.com/Adamouization/Breast-Cancer-Detection-Mammogram-Deep-Learning-Publication
+cd Breast-Cancer-Detection-Mammogram-Deep-Learning-Publication
 ```
 
-Create a repository that will be used to install Tensorflow 2 with CUDA 10 for Python and activate the virtual environment for GPU usage:
+Create a virtual conda environment:
 
 ```
-cd libraries/tf2
-tar xvzf tensorflow2-cuda-10-1-e5bd53b3b5e6.tar.gz
-sh build.sh
+conda create -n mammography python=3.6.13
+conda activate mammography
 ```
 
-Activate the virtual environment:
-
+Install requirements:
 ```
-source /cs/scratch/<username>/tf2/venv/bin/activate
+pip install -r requirements.txt
 ```
 
 Create `output`and `save_models` directories to store the results:
@@ -45,6 +43,7 @@ mkdir saved_models
 `cd` into the `src` directory and run the code:
 
 ```
+cd ./src
 main.py [-h] -d DATASET [-mt MAMMOGRAMTYPE] -m MODEL [-r RUNMODE] [-lr LEARNING_RATE] [-b BATCHSIZE] [-e1 MAX_EPOCH_FROZEN] [-e2 MAX_EPOCH_UNFROZEN] [-roi] [-v] [-n NAME]
 ```
 
@@ -61,6 +60,12 @@ where:
 * `-roi` is a flag to use versions of the images cropped around the ROI. Only usable with mini-MIAS dataset. Defaults to `False`.
 * `-v` is a flag controlling verbose mode, which prints additional statements for debugging purposes.
 * `NAME` is name of the experiment being tested (used for saving plots and model weights). Defaults to an empty string.
+
+## For best model described in paper:
+```
+python main.py -d CBIS-DDSM -mt all -m MobileNet -r train -lr 0.0001
+python main.py -d CBIS-DDSM -mt all -m MobileNet -r test -lr 0.0001
+```
 
 ## Dataset installation
 
