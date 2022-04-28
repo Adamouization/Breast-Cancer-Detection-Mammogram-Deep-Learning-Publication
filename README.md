@@ -1,6 +1,6 @@
 # Breast Cancer Detection in Mammograms Using Deep Learning Techniques
 
-Publication of "A Divide and Conquor Approach to Maximise Deep Learning Mammography Classification Accuracies".
+Publication repository of "A Divide and Conquor Approach to Maximise Deep Learning Mammography Classification Accuracies".
 
 ## Abstract
 
@@ -8,9 +8,9 @@ Breast cancer claims 11,400 lives on average every year in the UK, making it one
 
 Convolution Neural Networks (CNNs) are used as part of a pipeline based on deep learning techniques. A divide and conquer approach is followed to analyse the effects on performance and efficiency when utilising diverse deep learning techniques such as varying network architectures (VGG19, ResNet50, InceptionV3, DenseNet121, MobileNetV2), class weights, input sizes, image ratios, pre-processing techniques, transfer learning, dropout rates, and types of mammogram projections.
 
-![CNN Model](https://i.postimg.cc/wxWB8CTP/CNN-architecture.png)
+![CNN Model](https://i.imgur.com/dIfhxyz.png)
 
-Multiple techniques are found to provide accuracy gains relative to a general baseline (VGG19 model using uncropped 512$\times$512 pixels input images with a dropout rate of 0.2 and a learning rate of 1×10^−3) on the Curated Breast Imaging Subset of DDSM (CBIS-DDSM) dataset. These techniques involve transfer learning pre-trained ImagetNet weights to a MobileNetV2 architecture, with pre-trained weights from a binarised version of the mini Mammography Image Analysis Society (mini-MIAS) dataset applied to the fully connected layers of the model, coupled with using weights to alleviate class imbalance, and splitting CBIS-DDSM samples between images of masses and calcifications. Using these techniques, a 5.28% gain in accuracy over the baseline model was accomplished. Other deep learning techniques from the divide and conquer approach, such as larger image sizes, do not yield increased accuracies without the use of image pre-processing techniques such as Gaussian filtering, histogram equalisation and input cropping.
+Multiple techniques are found to provide accuracy gains relative to a general baseline (VGG19 model using uncropped 512x512 pixels input images with a dropout rate of 0.2 and a learning rate of 1×10^−3) on the Curated Breast Imaging Subset of DDSM (CBIS-DDSM) dataset. These techniques involve transfer learning pre-trained ImagetNet weights to a MobileNetV2 architecture, with pre-trained weights from a binarised version of the mini Mammography Image Analysis Society (mini-MIAS) dataset applied to the fully connected layers of the model, coupled with using weights to alleviate class imbalance, and splitting CBIS-DDSM samples between images of masses and calcifications. Using these techniques, a 5.28% gain in accuracy over the baseline model was accomplished. Other deep learning techniques from the divide and conquer approach, such as larger image sizes, do not yield increased accuracies without the use of image pre-processing techniques such as Gaussian filtering, histogram equalisation and input cropping.
 
 ## Environment setup and usage
 
