@@ -1,6 +1,6 @@
-# Breast Cancer Detection in Mammograms Using Deep Learning Techniques
+# Breast Cancer Detection in Mammograms Using Deep Learning Techniques [![DOI](https://zenodo.org/badge/345135430.svg)](https://zenodo.org/badge/latestdoi/345135430)
 
-Publication repository of "A Divide and Conquor Approach to Maximise Deep Learning Mammography Classification Accuracies".
+**Publication repository of "_A Divide and Conquor Approach to Maximise Deep Learning Mammography Classification Accuracies_".**
 
 ## Abstract
 
