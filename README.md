@@ -1,6 +1,6 @@
-# Breast Cancer Detection in Mammograms Using Deep Learning Techniques [![DOI](https://zenodo.org/badge/345135430.svg)](https://zenodo.org/badge/latestdoi/345135430)
+# A Divide and Conquor Approach to Maximise Deep Learning Mammography Classification Accuracies - Published in PLOS ONE
 
-**Publication repository of "_A Divide and Conquor Approach to Maximise Deep Learning Mammography Classification Accuracies_".**
+**Publication repository of the "_A Divide and Conquor Approach to Maximise Deep Learning Mammography Classification Accuracies_" artile published in PLOS ONE.** You can read the pape here: https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0280841
 
 ## Abstract
 
@@ -12,7 +12,25 @@ Convolution Neural Networks (CNNs) are used as part of a pipeline based on deep 
 
 Multiple techniques are found to provide accuracy gains relative to a general baseline (VGG19 model using uncropped 512x512 pixels input images with a dropout rate of 0.2 and a learning rate of 1×10^−3) on the Curated Breast Imaging Subset of DDSM (CBIS-DDSM) dataset. These techniques involve transfer learning pre-trained ImagetNet weights to a MobileNetV2 architecture, with pre-trained weights from a binarised version of the mini Mammography Image Analysis Society (mini-MIAS) dataset applied to the fully connected layers of the model, coupled with using weights to alleviate class imbalance, and splitting CBIS-DDSM samples between images of masses and calcifications. Using these techniques, a 5.28% gain in accuracy over the baseline model was accomplished. Other deep learning techniques from the divide and conquer approach, such as larger image sizes, do not yield increased accuracies without the use of image pre-processing techniques such as Gaussian filtering, histogram equalisation and input cropping.
 
-## Environment setup and usage
+## Citation
+
+```
+@article{10.1371/journal.pone.0280841,
+    doi = {10.1371/journal.pone.0280841},
+    author = {Jaamour, Adam AND Myles, Craig AND Patel, Ashay AND Chen, Shuen-Jen AND McMillan, Lewis AND Harris-Birtill, David},
+    journal = {PLOS ONE},
+    publisher = {Public Library of Science},
+    title = {A divide and conquer approach to maximise deep learning mammography classification accuracies},
+    year = {2023},
+    month = {05},
+    volume = {18},
+    url = {https://doi.org/10.1371/journal.pone.0280841},
+    pages = {1-24},
+    number = {5},
+}
+```
+
+## Environment setup and usage [![DOI](https://zenodo.org/badge/345135430.svg)](https://zenodo.org/badge/latestdoi/345135430)
 
 Clone the repository:
 
@@ -120,9 +138,11 @@ python3 ../../../src/dataset_processing_scripts/mini-MIAS-initial-pre-processing
 ## License 
 * see [LICENSE](https://github.com/Adamouization/Breast-Cancer-Detection-Mammogram-Deep-Learning-Publication/blob/master/LICENSE) file.
 
-## Code Authors
+## Authors
 
-* Adam Jaamour
+* Adam Jaamour (adam[at]jaamour[dot]com)
+* Craig Myles
 * Ashay Patel
 * Shuen-Jen Chen
-* Craig Myles
+* Lewis McMillan,
+* David Harris-Birtill
