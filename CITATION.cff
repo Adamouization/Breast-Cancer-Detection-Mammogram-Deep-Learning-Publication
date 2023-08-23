@@ -1,0 +1,87 @@
+# This CITATION.cff file was generated with cffinit.
+# Visit https://bit.ly/cffinit to generate yours today!
+
+cff-version: 1.2.0
+title: >-
+  Adamouization/Breast-Cancer-Detection-Mammogram-Deep-Learning-Publication:
+  PLOS ONE Submission
+message: >-
+  If you use this software, please cite it using the
+  metadata from this file.
+type: software
+authors:
+  - given-names: Adam
+    family-names: Jaamour
+    email: a.jaamour@bath.edu
+    orcid: 'https://orcid.org/0000-0002-8298-1302'
+    affiliation: University of St Andrews
+  - given-names: Craig
+    family-names: Myles
+    affiliation: University of St Andrews
+    orcid: 'https://orcid.org/0000-0002-2701-3149'
+identifiers:
+  - type: doi
+    value: 10.5281/zenodo.7980706
+repository-code: >-
+  https://github.com/Adamouization/Breast-Cancer-Detection-Mammogram-Deep-Learning-Publication
+url: >-
+  https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0280841
+abstract: >-
+  Breast cancer claims 11,400 lives on average every year in
+  the UK, making it one of the deadliest diseases.
+  Mammography is the gold standard for detecting early signs
+  of breast cancer, which can help cure the disease during
+  its early stages. However, incorrect mammography diagnoses
+  are common and may harm patients through unnecessary
+  treatments and operations (or a lack of treatment).
+  Therefore, systems that can learn to detect breast cancer
+  on their own could help reduce the number of incorrect
+  interpretations and missed cases. Various deep learning
+  techniques, which can be used to implement a system that
+  learns how to detect instances of breast cancer in
+  mammograms, are explored throughout this paper.
+  Convolution Neural Networks (CNNs) are used as part of a
+  pipeline based on deep learning techniques. A divide and
+  conquer approach is followed to analyse the effects on
+  performance and efficiency when utilising diverse deep
+  learning techniques such as varying network architectures
+  (VGG19, ResNet50, InceptionV3, DenseNet121, MobileNetV2),
+  class weights, input sizes, image ratios, pre-processing
+  techniques, transfer learning, dropout rates, and types of
+  mammogram projections. This approach serves as a starting
+  point for model development of mammography classification
+  tasks. Practitioners can benefit from this work by using
+  the divide and conquer results to select the most suitable
+  deep learning techniques for their case out-of-the-box,
+  thus reducing the need for extensive exploratory
+  experimentation. Multiple techniques are found to provide
+  accuracy gains relative to a general baseline (VGG19 model
+  using uncropped 512 × 512 pixels input images with a
+  dropout rate of 0.2 and a learning rate of 1 × 10−3) on
+  the Curated Breast Imaging Subset of DDSM (CBIS-DDSM)
+  dataset. These techniques involve transfer learning
+  pre-trained ImagetNet weights to a MobileNetV2
+  architecture, with pre-trained weights from a binarised
+  version of the mini Mammography Image Analysis Society
+  (mini-MIAS) dataset applied to the fully connected layers
+  of the model, coupled with using weights to alleviate
+  class imbalance, and splitting CBIS-DDSM samples between
+  images of masses and calcifications. Using these
+  techniques, a 5.6% gain in accuracy over the baseline
+  model was accomplished. Other deep learning techniques
+  from the divide and conquer approach, such as larger image
+  sizes, do not yield increased accuracies without the use
+  of image pre-processing techniques such as Gaussian
+  filtering, histogram equalisation and input cropping.
+keywords:
+  - machine-learning
+  - deep-learning
+  - convolutional-neural-network
+  - cnn
+  - breast-cancer-detection
+  - mammogram-classification
+  - plos-one
+license: BSD-2-Clause
+commit: bc82a51cf1105d6bd24a9c35928d7f625eb456ef
+version: '1.2'
+date-released: '2023-05-29'
