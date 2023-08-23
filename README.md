@@ -153,11 +153,15 @@ python3 ../../../src/dataset_processing_scripts/mini-MIAS-initial-pre-processing
 ## License 
 * see [BSD 2-Clause License](https://github.com/Adamouization/Breast-Cancer-Detection-Mammogram-Deep-Learning-Publication/blob/master/LICENSE) file.
 
+## Star History
+
+[![Star History Chart](https://api.star-history.com/svg?repos=Adamouization/Breast-Cancer-Detection-Mammogram-Deep-Learning,Adamouization/Breast-Cancer-Detection-Mammogram-Deep-Learning-Publication&type=Date)](https://star-history.com/#Adamouization/Breast-Cancer-Detection-Mammogram-Deep-Learning&Adamouization/Breast-Cancer-Detection-Mammogram-Deep-Learning-Publication&Date)
+
 ## Authors
 
-* Adam Jaamour (adam[at]jaamour[dot]com)
-* Craig Myles
+* [Adam Jaamour](https://orcid.org/0000-0002-8298-1302) (adam[at]jaamour[dot]com)
+* [Craig Myles](https://orcid.org/0000-0002-2701-3149)
 * Ashay Patel
 * Shuen-Jen Chen
-* Lewis McMillan
-* David Harris-Birtill
+* [Lewis McMillan](https://orcid.org/0000-0002-7725-5162)
+* [David Harris-Birtill](https://orcid.org/0000-0002-0740-3668)
