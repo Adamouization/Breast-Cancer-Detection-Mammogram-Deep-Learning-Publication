@@ -1,6 +1,7 @@
-# A Divide and Conquor Approach to Maximise Deep Learning Mammography Classification Accuracies - Published in PLOS ONE
+# A Divide and Conquor Approach to Maximise Deep Learning Mammography Classification Accuracies - Published in PLOS ONE [![License](https://img.shields.io/badge/License-BSD_2--Clause-orange.svg?style=for-the-badge)](https://opensource.org/licenses/BSD-2-Clause) ![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54) ![Jupyter Notebook](https://img.shields.io/badge/jupyter-%23FA0F00.svg?style=for-the-badge&logo=jupyter&logoColor=white)
 
-**Publication repository of the "_A Divide and Conquor Approach to Maximise Deep Learning Mammography Classification Accuracies_" artile published in PLOS ONE.** You can read the pape here: https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0280841
+
+**Publication repository of the "_A Divide and Conquor Approach to Maximise Deep Learning Mammography Classification Accuracies_" peer-reviewed paper published in PLOS ONE.** You can read the paper here: https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0280841
 
 ## Abstract
 
@@ -14,6 +15,20 @@ Multiple techniques are found to provide accuracy gains relative to a general ba
 
 ## Citation
 
+### Code citation (this GitHub repository) [![DOI](https://zenodo.org/badge/345135430.svg)](https://zenodo.org/badge/latestdoi/345135430)
+```
+@software{Jaamour_Adamouization_Breast-Cancer-Detection-Mammogram-Deep-Learning-Publication_PLOS_ONE_2023,
+    author = {Jaamour, Adam and Myles, Craig},
+    license = {BSD-2-Clause},
+    month = may,
+    title = {{Adamouization/Breast-Cancer-Detection-Mammogram-Deep-Learning-Publication: PLOS ONE Submission}},
+    url = {https://github.com/Adamouization/Breast-Cancer-Detection-Mammogram-Deep-Learning-Publication},
+    version = {1.2},
+    year = {2023}
+}
+```
+
+### Published paper citation (PLOS ONE)
 ```
 @article{10.1371/journal.pone.0280841,
     doi = {10.1371/journal.pone.0280841},
@@ -30,7 +45,7 @@ Multiple techniques are found to provide accuracy gains relative to a general ba
 }
 ```
 
-## Environment setup and usage [![DOI](https://zenodo.org/badge/345135430.svg)](https://zenodo.org/badge/latestdoi/345135430)
+## Environment setup and usage
 
 Clone the repository:
 
@@ -136,7 +151,7 @@ python3 ../../../src/dataset_processing_scripts/mini-MIAS-initial-pre-processing
 ```
 
 ## License 
-* see [LICENSE](https://github.com/Adamouization/Breast-Cancer-Detection-Mammogram-Deep-Learning-Publication/blob/master/LICENSE) file.
+* see [BSD 2-Clause License](https://github.com/Adamouization/Breast-Cancer-Detection-Mammogram-Deep-Learning-Publication/blob/master/LICENSE) file.
 
 ## Authors
 
@@ -144,5 +159,5 @@ python3 ../../../src/dataset_processing_scripts/mini-MIAS-initial-pre-processing
 * Craig Myles
 * Ashay Patel
 * Shuen-Jen Chen
-* Lewis McMillan,
+* Lewis McMillan
 * David Harris-Birtill
